@@ -94,7 +94,7 @@ end
 fonts = Dir.new(fonts_dir).entries
 fonts.each do |font|
   font = "#{fonts_dir}/#{font}"
-  %x{#{sfnt2woff}/sfnt2woff #{font} }
+  %x{#{sfnt2woff_dir}/sfnt2woff #{font} }
 end
 ##############################################################
 
